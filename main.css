@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gray;
+}
+
+aside {
+  border: 2px solid black;
+}
+
+.top-navigation {
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: (20rem, 1fr, 20rem, 20rem, 20rem)
+}
+
+.profile-container {
+  border: 2px solid black;
+}
+
+.menu-section {
+  border: 2px solid black;
+}
+
+.graph-container {
+  border: 2px solid black;
+}
+
+.circle-graph {
+  border: 2px solid black;
+}
+
+.bar-graph {
+  border: 2px solid black;
+}
+
+.information-container {
+  border: 2px solid black;
+}
+
+.job-description {
+  border: 2px solid black;
+}
+
+.social-media {
+  border: 2px solid black;
+}
