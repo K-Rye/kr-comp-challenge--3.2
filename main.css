@@ -6,22 +6,41 @@ body {
   background-color: gray;
 }
 
+
+main {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+  grid-template-areas:
+  "aside box1 box1"
+  "aside box2 box2";
+}
+
 aside {
   border: 2px solid black;
+  display: inline-grid;
+  grid-template-columns: 20rem;
+
 }
 
 .top-navigation {
   border: 2px solid black;
   display: grid;
-  grid-template-columns: (20rem, 1fr, 20rem, 20rem, 20rem)
+  grid-template-columns: 20rem 1fr 20rem 20rem 20rem;
 }
 
 .profile-container {
   border: 2px solid black;
+  display: grid;
+  grid-template-columns: 40rem 40rem;
 }
 
-.menu-section {
+ul {
   border: 2px solid black;
+  display: grid;
+  grid-template-columns: 10rem 10rem 10rem 10rem 10rem 10rem 10rem;  
+  list-style-type: none;
 }
 
 .graph-container {
