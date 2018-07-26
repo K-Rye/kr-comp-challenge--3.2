@@ -6,12 +6,9 @@ body {
   background-color: gray;
 }
 
-
 main {
   display: grid;
-  height: 100%;
-  grid-template-columns: 1fr 2fr;
-  grid-gap: 20px;
+  grid-template-columns: .5fr 4fr;
   grid-template-areas:
   "aside box1 box1"
   "aside box2 box2";
@@ -19,15 +16,19 @@ main {
 
 aside {
   border: 2px solid black;
-  display: inline-grid;
-  grid-template-columns: 20rem;
+  display: grid;
+  grid-area: aside;
+}
 
+.box1 {
+  display: grid;
+  grid-area: box1;
 }
 
 .top-navigation {
   border: 2px solid black;
   display: grid;
-  grid-template-columns: 20rem 1fr 20rem 20rem 20rem;
+  grid-template-columns: 7rem 1fr 7rem 7rem 7rem;
 }
 
 .profile-container {
@@ -45,6 +46,7 @@ ul {
 
 .graph-container {
   border: 2px solid black;
+  grid-template-columns: 40rem 40rem; 
 }
 
 .circle-graph {
@@ -55,8 +57,14 @@ ul {
   border: 2px solid black;
 }
 
+.box2 {
+  display: grid;
+  grid-area: box2;
+}
+
 .information-container {
   border: 2px solid black;
+  grid-template-columns: 60rem 20rem;
 }
 
 .job-description {
