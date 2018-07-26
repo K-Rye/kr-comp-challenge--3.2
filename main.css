@@ -23,6 +23,7 @@ aside {
 .box1 {
   display: grid;
   grid-area: box1;
+  width: 100%;
 }
 
 .top-navigation {
@@ -46,6 +47,7 @@ ul {
 
 .graph-container {
   border: 2px solid black;
+  display: grid;
   grid-template-columns: 40rem 40rem; 
 }
 
@@ -60,10 +62,12 @@ ul {
 .box2 {
   display: grid;
   grid-area: box2;
+  width: 100%;
 }
 
 .information-container {
   border: 2px solid black;
+  display: grid;
   grid-template-columns: 60rem 20rem;
 }
 
