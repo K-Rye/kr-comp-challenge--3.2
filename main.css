@@ -20,6 +20,38 @@ aside {
   grid-area: aside;
 }
 
+.aside-profile-info {
+  border: 2px solid black;
+}
+
+.aside-pic {
+  width: 80px;
+  border-radius: 70%;
+}
+
+.aside-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  padding-left: 10px;
+  margin-top: 25px;
+
+}
+
+
+.aside-main {
+
+}
+
+.aside-admin {
+
+}
+
+.aside-categories {
+
+}
+
 .box1 {
   display: grid;
   grid-area: box1;
