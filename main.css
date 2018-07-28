@@ -15,11 +15,10 @@ aside {
   border-right: 2px solid black;
   display: flex;
   flex-direction: column;
-  /*justify-content: space-between;*/
 }
 
 .main-content-container {
-  /*display: grid;*/
+
 }
 
 .aside-profile-info {
@@ -47,16 +46,9 @@ aside {
   padding-left: 1rem;
 }
 
-
 .aside-main {
-  /*height: 20rem;*/
-  /*display: flex;*/
-  /*flex-direction: column;*/
-  /*justify-content: space-evenly;*/
-  /*padding: 0rem 1rem;  */
+
 }
-
-
 
 .aside-admin {
 
@@ -64,12 +56,6 @@ aside {
 
 .aside-categories {
 
-}
-
-.box1 {
-  /*display: grid;*/
-  /*grid-area: box1;*/
-  /*width: 100%;*/
 }
 
 .top-navigation {
@@ -83,25 +69,17 @@ aside {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
-/*  display: grid;
-  grid-template-columns: 40rem 40rem;*/
 }
 
-/*.profile-information {
-  display: flex;
-}*/
+h1
 
 .location-link {
   display: inline-block;
 }
 
 ul {
-  /*border: 2px solid black;*/
   display: flex;
   justify-content: space-evenly;
-  /*display: grid;
-  grid-template-columns: repeat(7, 10rem);*/
   list-style-type: none;
 }
 
