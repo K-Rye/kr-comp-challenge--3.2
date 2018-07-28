@@ -15,11 +15,10 @@ aside {
   border-right: 2px solid black;
   display: flex;
   flex-direction: column;
-  /*justify-content: space-between;*/
 }
 
 .main-content-container {
-  /*display: grid;*/
+
 }
 
 .aside-profile-info {
@@ -40,23 +39,17 @@ aside {
   height: 20rem;
   display: flex;
   flex-direction: column;
-  flex-direction: space-evenly;
+  justify-content: space-evenly;
   border-bottom: 2px solid black;
   list-style-type: none;
   margin-top: 2rem;
   padding-left: 1rem;
 }
 
-
 .aside-main {
-  /*height: 20rem;*/
-  /*display: flex;*/
-  /*flex-direction: column;*/
-  /*justify-content: space-evenly;*/
-  /*padding: 0rem 1rem;  */
+  flex-direction: space-evenly;
+
 }
-
-
 
 .aside-admin {
 
@@ -64,12 +57,6 @@ aside {
 
 .aside-categories {
 
-}
-
-.box1 {
-  /*display: grid;*/
-  /*grid-area: box1;*/
-  /*width: 100%;*/
 }
 
 .top-navigation {
@@ -81,29 +68,43 @@ aside {
 .profile-container {
   border: 2px solid black;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-
-/*  display: grid;
-  grid-template-columns: 40rem 40rem;*/
 }
 
-/*.profile-information {
-  display: flex;
-}*/
+.profile-information {
+  margin-left: 3rem;
+}
+
+.profile-btns {
+  margin-right: 2rem;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 2rem 0 0 0;
+}
 
 .location-link {
   display: inline-block;
+  line-height: 2em;
+  margin: 0 0 0 0;
 }
 
-ul {
-  /*border: 2px solid black;*/
+.menu-container {
   display: flex;
-  justify-content: space-evenly;
-  /*display: grid;
-  grid-template-columns: repeat(7, 10rem);*/
+  justify-content: space-around;
+  font-size: .75em;
+  margin: 1rem 10rem 1rem 10px;
+  padding: 0 0 0 0;
   list-style-type: none;
 }
+
+.text-margin {
+  margin-left: 10px;
+}
+
+
 
 .graph-container {
   border: 2px solid black;
