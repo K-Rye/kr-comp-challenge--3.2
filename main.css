@@ -13,7 +13,7 @@ main {
 
 aside {
   border-right: 2px solid black;
-  display: grid;
+  /*display: grid;*/
 }
 
 .main-content-container {
@@ -113,8 +113,12 @@ ul {
   background-size: cover;*/
 }
 
-.bar-graph-img {
+.bar-graph {
   width: 30rem;
+}
+
+.bar-graph-img {
+  width: 80%;
 }
 
 .information-container {
