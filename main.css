@@ -8,10 +8,7 @@ body {
 
 main {
   display: grid;
-  grid-template-columns: 10rem 1fr;
- /* grid-template-areas:
-  "aside box1 box1"
-  "aside box2 box2";*/
+  grid-template-columns: 13rem 1fr;
 }
 
 aside {
@@ -24,23 +21,27 @@ aside {
 }
 
 .aside-profile-info {
-  /*border-bottom: 2px solid black;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: .25rem;
+  border-bottom: 2px solid black;
 }
 
 .aside-pic {
   width: 80px;
   border-radius: 70%;
- 
+
 }
 
 .aside-nav {
   display: flex;
   flex-direction: column;
-  /*justify-content: center;*/
   /*border-bottom: 2px solid black;*/
   list-style-type: none;
-  margin-top: 25px;
-  padding-left: 10px;
+  /*margin-top: 2rem;
+  padding-left: 1rem;*/
 }
 
 .aside-main {
@@ -69,47 +70,86 @@ aside {
 
 .profile-container {
   border: 2px solid black;
-  display: grid;
-  grid-template-columns: 40rem 40rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+/*  display: grid;
+  grid-template-columns: 40rem 40rem;*/
+}
+
+/*.profile-information {
+  display: flex;
+}*/
+
+.location-link {
+  display: inline-block;
 }
 
 ul {
-  border: 2px solid black;
-  display: grid;
-  grid-template-columns: repeat(7, 10rem);
+  /*border: 2px solid black;*/
+  display: flex;
+  justify-content: space-evenly;
+  /*display: grid;
+  grid-template-columns: repeat(7, 10rem);*/
   list-style-type: none;
 }
 
 .graph-container {
   border: 2px solid black;
   display: grid;
-  grid-template-columns: 40rem 40rem; 
+  grid-template-columns: 40rem 1fr; 
 }
 
 .circle-graph {
   border: 2px solid black;
 }
 
-.bar-graph {
+.bar-graph-section {
   border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+ /* background-image: url('https://files.slack.com/files-pri/T029P2S9M-FBW5RMS10/image.png')
+  background-size: cover;*/
 }
 
-.box2 {
-  /*display: grid;*/
-  /*grid-area: box2;
-  width: 100%;*/
+.bar-graph-img {
+  width: 30rem;
 }
 
 .information-container {
   border: 2px solid black;
   display: grid;
-  grid-template-columns: 1fr 20rem;
+  grid-template-columns: 1fr 30rem;
 }
 
 .job-description {
+  display: flex;
+  flex-direction: column;
   border: 2px solid black;
+  margin: 0 3rem 0 3rem;
+}
+
+.table-spacing,p {
+  display: inline-block;
+  margin: 1rem 2rem 1rem 2rem;
 }
 
 .social-media {
   border: 2px solid black;
 }
+
+@media (max-width: 1000px) {
+  main {
+  display: grid;
+  grid-template-columns: 1fr;
+  }
+  aside {
+    display: none;
+  }
+}
+  
+ /* .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    grid-gap: 15px;
+  } */
