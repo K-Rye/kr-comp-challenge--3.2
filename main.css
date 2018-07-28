@@ -13,11 +13,13 @@ main {
 
 aside {
   border-right: 2px solid black;
-  /*display: grid;*/
+  display: flex;
+  flex-direction: column;
+  /*justify-content: space-between;*/
 }
 
 .main-content-container {
-  display: grid;
+  /*display: grid;*/
 }
 
 .aside-profile-info {
@@ -25,28 +27,36 @@ aside {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: .25rem;
+  margin-top: .5rem;
   border-bottom: 2px solid black;
 }
 
 .aside-pic {
   width: 80px;
   border-radius: 70%;
-
 }
 
 .aside-nav {
+  height: 20rem;
   display: flex;
   flex-direction: column;
-  /*border-bottom: 2px solid black;*/
+  flex-direction: space-evenly;
+  border-bottom: 2px solid black;
   list-style-type: none;
-  /*margin-top: 2rem;
-  padding-left: 1rem;*/
+  margin-top: 2rem;
+  padding-left: 1rem;
 }
+
 
 .aside-main {
-
+  /*height: 20rem;*/
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*justify-content: space-evenly;*/
+  /*padding: 0rem 1rem;  */
 }
+
+
 
 .aside-admin {
 
