@@ -149,8 +149,6 @@ h1 {
 }
 
 .job-description {
-  /*display: flex;*/
-  /*flex-direction: column;*/
   border: 2px solid black;
   margin: 0 3rem 0 3rem;
 }
@@ -159,14 +157,30 @@ h1 {
   border: 2px solid black;
 }
 
-.information-section {
+.table {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 0 0 0;
+  padding: 0;
 }
 
-.table-spacing,p {
-  display: inline-block;
-  margin: 1rem 2rem 1rem 2rem;
+.table-cell {
+  flex-grow: 1;
+  font-size: 1em;
+  padding: 0.8em 1.2em;
+  /*overflow: hidden;*/
+  list-style: none;
+  border: 
+  background:
+}
+
+.column-left {
+  width: 35%;
+}
+
+.column-right {
+  overflow: hidden;
+  width: 65%;
 }
 
 .social-media {
@@ -182,28 +196,7 @@ h1 {
     display: none;
   }
 }
-/* Tables
-================================== */
-.table {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 0 3em 0;
-  padding: 0;
-}
-.table-cell {
-  box-sizing: border-box;
-  flex-grow: 1;
-  padding: 0.8em 1.2em;
-  overflow: hidden;
-  list-style: none;
-  border: 
-  background:
-}
 
-/* Table column sizing
-================================== */
-/*.Rtable--2cols > .Rtable-cell  { width: 100%; }*/
-.table-cell  { width: 50%; }
 
 
   
