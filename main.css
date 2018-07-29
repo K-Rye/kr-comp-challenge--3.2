@@ -139,7 +139,7 @@ h1 {
 }
 
 .hr-left {
-  
+
 }
 
 .information-container {
@@ -182,6 +182,30 @@ h1 {
     display: none;
   }
 }
+/* Tables
+================================== */
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 3em 0;
+  padding: 0;
+}
+.table-cell {
+  box-sizing: border-box;
+  flex-grow: 1;
+  padding: 0.8em 1.2em;
+  overflow: hidden;
+  list-style: none;
+  border: 
+  background:
+}
+
+/* Table column sizing
+================================== */
+/*.Rtable--2cols > .Rtable-cell  { width: 100%; }*/
+.table-cell  { width: 50%; }
+
+
   
  /* .grid-container {
     grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
