@@ -6,6 +6,8 @@ body {
   background-color: gray;
 }
 
+/*====================GRID DESIGNATION========================*/
+
 main {
   display: grid;
   grid-template-columns: 13rem 1fr;
@@ -20,6 +22,8 @@ aside {
 .main-content-container {
 
 }
+
+/*=======================ASIDE SECTION========================*/
 
 .aside-profile-info {
   display: flex;
@@ -59,11 +63,15 @@ aside {
 
 }
 
+/*=================TOP NAVIGATION========================*/
+
 .top-navigation {
   border: 2px solid black;
   display: grid;
   grid-template-columns: 5rem 1fr 5rem 5rem 5rem;
 }
+
+/*=======================PROFILE SECTION====================*/
 
 .profile-container {
   /*border: 2px solid black;*/
@@ -104,20 +112,19 @@ h1 {
   margin-left: 10px;
 }
 
+/*========================GRAPH SECTION============================*/
+
 .graph-container {
-  /*border: 2px solid black;*/
   display: grid;
   grid-template-columns: 40rem 1fr; 
 }
 
 .circle-graph {
-  /*border: 2px solid black;*/
   display: flex;
   flex-direction: column;
 }
 
 .bar-graph-section {
-  /*border: 2px solid black;*/
   display: flex;
   flex-direction: column;
  /* background-image: url('https://files.slack.com/files-pri/T029P2S9M-FBW5RMS10/image.png')
@@ -133,6 +140,15 @@ h1 {
   width: 84%;
 }
 
+.circle-graph {
+
+}
+
+.c-graph-all {
+  width: 40px;
+
+}
+
 .hr-right {
   font-color: black;
   /*margin: 2rem 3rem 2rem 3rem;*/
@@ -141,6 +157,8 @@ h1 {
 .hr-left {
 
 }
+
+/*=====================INFORMATION SECTION=========================*/
 
 .information-container {
   border: 2px solid black;
@@ -187,6 +205,8 @@ h1 {
   border: 2px solid black;
 }
 
+/*=========================MEDIA QUERIES==========================*/
+
 @media (max-width: 1000px) {
   main {
   display: grid;
@@ -197,10 +217,3 @@ h1 {
   }
 }
 
-
-
-  
- /* .grid-container {
-    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
-    grid-gap: 15px;
-  } */
