@@ -118,10 +118,84 @@ h1 {
   display: grid;
   grid-template-columns: 40rem 1fr; 
 }
+.flex-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.single-chart {
+  width: 33%;
+  justify-content: space-around ;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.orange .circle {
+  stroke: #ff9f00;
+}
+
+.circular-chart.green .circle {
+  stroke: #4CC790;
+}
+
+.circular-chart.blue .circle {
+  stroke: #3c9ee5;
+}
+
+.percentage {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+
+.interviews {
+  font-size: .25em;
+}
 
 .circle-graph {
   display: flex;
-  flex-direction: column;
+  flex-flow: row nowrap; 
+}
+
+.c-graph-all {
+  width: 175px;
+  margin-left: 2rem;
+}
+
+.c-graph1 {
+
+}
+
+.c-graph2 {
+  
+}
+.c-graph3 {
+  
 }
 
 .bar-graph-section {
@@ -140,14 +214,6 @@ h1 {
   width: 84%;
 }
 
-.circle-graph {
-
-}
-
-.c-graph-all {
-  width: 50px;
-
-}
 
 .hr-right {
   font-color: black;
@@ -163,7 +229,7 @@ h1 {
 .information-container {
   border: 2px solid black;
   display: grid;
-  grid-template-columns: 1fr 30rem;
+  grid-template-columns: 1fr 25rem;
 }
 
 .job-description {
@@ -203,17 +269,36 @@ h1 {
 
 .social-media {
   border: 2px solid black;
+  margin-right: 3rem;
 }
 
 /*=========================MEDIA QUERIES==========================*/
 
-@media (max-width: 1000px) {
+@media (max-width: 1064px) {
   main {
-  display: grid;
-  grid-template-columns: 1fr;
-  }
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+  
   aside {
     display: none;
-  }
+    }
 }
+
+@media (max-width: 875px) {
+  .information-container {
+    grid-template-columns: 27rem 1fr;
+    }
+  
+  .job-description {
+    margin: 0 2rem 0 2rem;
+  }
+
+  .social-media {
+    margin-right: 2rem;
+  } 
+}
+
+@media (max-width: 777px)
+
 
