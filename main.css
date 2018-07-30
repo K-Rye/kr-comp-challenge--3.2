@@ -148,11 +148,11 @@ h1 {
   animation: progress 1s ease-out forwards;
 }
 
-@keyframes progress {
+/*@keyframes progress {
   0% {
     stroke-dasharray: 0 100;
   }
-}
+}*/
 
 .circular-chart.orange .circle {
   stroke: #ff9f00;
@@ -299,6 +299,12 @@ h1 {
   } 
 }
 
-@media (max-width: 777px)
-
+@media (max-width: 777px) {
+  .information-container {
+    grid-template-columns: 1fr;
+    }
+  .social-media {
+    margin: 0 2rem 0 2rem;
+  }
+}
 
