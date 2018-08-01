@@ -47,32 +47,69 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  font-size: .95em;
   color:#a5acb9;
   border-bottom: 2px solid #2b3240;
   list-style-type: none;
   padding-left: 1rem;
 }
 
-.aside-main {
-  flex-direction: space-evenly;
-
+.fas {
+  margin-right: .75rem;
 }
 
-.aside-admin {
-
+.fas:hover {
+  background-color: #7c0a02;
+  cursor: pointer; 
 }
 
-.aside-categories {
-
+.fas-1 {
+  color: yellow;
 }
+
+.fas-2 {
+  color: blue;  
+}
+
+.fas-3 {
+  color: red; 
+}
+
+.fas-4 {
+  color: green;  
+}
+
 
 /*=================TOP NAVIGATION========================*/
 
 .top-navigation {
-  border: 2px solid #e7e9ec;
+  border-left-style: 2px solid #e7e9ec;
+  border-right-style: 2px solid #e7e9ec;
   display: grid;
   grid-template-columns: 5rem 1fr 5rem 5rem 5rem;
   background-color: #FFFFFF;
+}
+
+.fa {
+  font-size: 2em;
+  padding: .75em .75em .75em .75em;
+  color: #9ca3ae;
+  border-bottom: 2px solid #e7e9ec;
+  border-right: 2px solid #e7e9ec;
+}
+
+.fa-bars {
+  border-right: none;
+}
+
+.fa:hover {
+  background-color: #46a3f3;
+
+}
+
+.search {
+  font-size: 2em;
+  padding-left: 1em;
 }
 
 /*=======================PROFILE SECTION====================*/
@@ -115,6 +152,10 @@ aside {
 .open-btn:hover {
   background-color: #46a3f3;
   cursor: pointer;
+}
+
+.fa-fire {
+  margin-left: .15em;
 }
 
 
@@ -170,7 +211,6 @@ h1 {
 .graph-btns:hover {
   background-color: #46a3f3;
   cursor: pointer;
-  
 }
 
 .circle-graph-btn {
@@ -178,7 +218,7 @@ h1 {
   height: 35px;
   border-radius: 30px;
   border: 1px solid #D3D3D3;
-  margin: 2rem 1rem 1rem 13rem;
+  margin: 2rem 1rem 9rem 13rem;
 }
 
 .c-graph-all {
@@ -206,11 +246,11 @@ h1 {
   animation: progress 1s ease-out forwards;
 }
 
-/*@keyframes progress {
+@keyframes progress {
   0% {
     stroke-dasharray: 0 100;
   }
-}*/
+}
 
 .c-graph.turquoise .circle {
   stroke: #A6CB4C;
@@ -235,11 +275,6 @@ h1 {
   font-size: .2em;
 }
 
-/*.circle-graph {
-  display: flex;
-  flex-flow: row nowrap; 
-}*/
-
 .bar-graph-section {
   display: flex;
   flex-direction: column;
@@ -251,29 +286,12 @@ h1 {
   height: 35px;
   border-radius: 30px;
   border: 1px solid #D3D3D3;
-  margin: 2rem 1rem 1rem 11rem;
+  margin: 2rem 1rem 9rem 11rem;
 }
 
 .bar-graph-img {
   width: 25em;
   margin-left: 3rem
-}
-
-.page-break {
-  display: flex; 
-}
-
-.line-break {
-  width: 20px;
-}
-
-.hr-right {
-  /*font-color: black;*/
-  width: 100px;
-}
-
-.hr-left {
-
 }
 
 /*=====================INFORMATION SECTION=========================*/
@@ -294,13 +312,15 @@ h1 {
   font-size: 1.25em;
   padding: 0.75rem 1.5rem 0.5em 1.5rem;
   background-color: #717e93;
+  color: #ffffff;
 }
 
 .edit-btn {
-  width: 60px; 
-  height: 30px;
+  width: 80px; 
+  height: 35px;
   margin-left: 1rem;
   background-color: #7f8ba4;
+  color: #FFFFFf;
   border: none; 
 }
 
@@ -324,8 +344,6 @@ h1 {
   overflow: hidden;
   list-style: none;
   border-bottom: 2px solid #f1f3f6;
-  /*margin: 0 1em 0 1em;*/
-  background:
 }
 
 .column-left {
@@ -353,7 +371,10 @@ h1 {
   height: 50px;
   background-color: #47abe9;
   color: #e4e9f4;
+}
 
+.twitter:hover {
+  background-color: #7c0a02;
 }
 
 .linkdin {
@@ -367,12 +388,21 @@ h1 {
   margin: 0 1rem 0 1rem;
 }
 
+.btn-margin:hover {
+  background-color: #46a3f3;
+  cursor: pointer;
+}
+
 .btn-spacing {
   margin-top: 20px;
 }
 
 .sm-info {
-  margin-left: 1rem;
+  margin: 3.5rem 0 1rem 1rem;
+}
+
+.link-job {
+  font-size: 1.5em;
 }
 
 .btn-end {
@@ -382,20 +412,16 @@ h1 {
 .social-media-input {
   height: 42px;
   margin-left: 1em;
-
 }
 
 .link-to-job-input {
   border: none;
-  /*width: 275px;*/
-  /*padding: .75em 0 .75em 1em;*/
+  width: 16em;
 }
 
 .widget-input {
   border: none;
-  /*width: 275px;*/
-  /*padding: .75em 0 .75em 1em;*/
-
+  width: 16em;
 }
 
 .copy-btn {
@@ -404,16 +430,28 @@ h1 {
   color: #e4e9f4;
 }
 
+.copy-btn:hover {
+  background-color: #46a3f3;
+  cursor: pointer;
+}
+
 .upload-input {
   margin-right: 1em;
- /* border: none;
-  width: 340px;
-  padding: .75em 1em .75em 1em;
-  margin: 0 1rem 0 1rem;*/
+}
+
+.fa-globe-americas {
+  margin-right: .5em;
 }
 
 
+.fa-archive {
+  margin-right: .5em;
+}
 
+
+.fa-telegram-plane {
+  margin-right: .5em;
+}
 
 
 /*=========================MEDIA QUERIES==========================*/
