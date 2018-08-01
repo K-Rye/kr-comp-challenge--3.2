@@ -4,6 +4,7 @@
 
 body {
   background-color: gray;
+  max-width: 1600px;
 }
 
 /*====================GRID DESIGNATION========================*/
@@ -121,9 +122,10 @@ h1 {
   display: grid;
   grid-template-columns: 40rem 1fr; 
 }
+
 .circle-graph-section {
   display: flex;
-  flex-flow: row nowrap;
+  margin-right: 10px;
 }
 
 .c-graph-all {
@@ -158,7 +160,7 @@ h1 {
 }*/
 
 .c-graph.turquoise .circle {
-  stroke: #40E0D0;
+  stroke: #A6CB4C;
 }
 
 .c-graph.red .circle {
@@ -185,33 +187,15 @@ h1 {
   flex-flow: row nowrap; 
 }
 
-.c-graph1 {
-
-}
-
-.c-graph2 {
-  
-}
-.c-graph3 {
-  
-}
-
 .bar-graph-section {
   display: flex;
   flex-direction: column;
- /* background-image: url('https://files.slack.com/files-pri/T029P2S9M-FBW5RMS10/image.png')
-  background-size: cover;*/
-}
-
-.bar-graph {
-  width: 30rem;
-  margin-left: 3rem;
 }
 
 .bar-graph-img {
-  width: 84%;
+  width: 25em;
+  margin-left: 3rem
 }
-
 
 .hr-right {
   font-color: black;
@@ -271,6 +255,18 @@ h1 {
 }
 
 /*=========================MEDIA QUERIES==========================*/
+
+@media (max-width: 1330px) {
+  .graph-container {
+    display: grid;
+    grid-template-columns: 35rem 1fr; 
+  }
+
+  .bar-graph-img {
+    width: 22em;
+    margin-left: 2rem
+  }
+}
 
 @media (max-width: 1064px) {
   main {
