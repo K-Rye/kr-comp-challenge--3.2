@@ -47,7 +47,7 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  font-size: .85em;
+  font-size: .95em;
   color:#a5acb9;
   border-bottom: 2px solid #2b3240;
   list-style-type: none;
@@ -62,6 +62,23 @@ aside {
   background-color: #7c0a02;
   cursor: pointer; 
 }
+
+.fas-1 {
+  color: yellow;
+}
+
+.fas-2 {
+  color: blue;  
+}
+
+.fas-3 {
+  color: red; 
+}
+
+.fas-4 {
+  color: green;  
+}
+
 
 /*=================TOP NAVIGATION========================*/
 
@@ -194,7 +211,6 @@ h1 {
 .graph-btns:hover {
   background-color: #46a3f3;
   cursor: pointer;
-  
 }
 
 .circle-graph-btn {
@@ -202,7 +218,7 @@ h1 {
   height: 35px;
   border-radius: 30px;
   border: 1px solid #D3D3D3;
-  margin: 2rem 1rem 7rem 13rem;
+  margin: 2rem 1rem 9rem 13rem;
 }
 
 .c-graph-all {
@@ -270,14 +286,13 @@ h1 {
   height: 35px;
   border-radius: 30px;
   border: 1px solid #D3D3D3;
-  margin: 2rem 1rem 7rem 11rem;
+  margin: 2rem 1rem 9rem 11rem;
 }
 
 .bar-graph-img {
   width: 25em;
   margin-left: 3rem
 }
-
 
 /*=====================INFORMATION SECTION=========================*/
 
@@ -422,11 +437,21 @@ h1 {
 
 .upload-input {
   margin-right: 1em;
- 
+}
+
+.fa-globe-americas {
+  margin-right: .5em;
 }
 
 
+.fa-archive {
+  margin-right: .5em;
+}
 
+
+.fa-telegram-plane {
+  margin-right: .5em;
+}
 
 
 /*=========================MEDIA QUERIES==========================*/
