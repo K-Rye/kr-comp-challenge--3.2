@@ -102,7 +102,7 @@ h1 {
 .menu-container {
   display: flex;
   justify-content: space-around;
-  font-size: .75em;
+  font-size: .85em;
   margin: 1rem 10rem 1rem 8px;
   padding: 0 0 0 0;
   list-style-type: none;
@@ -182,10 +182,10 @@ h1 {
   flex-flow: row nowrap; 
 }
 
-.c-graph-all {
+/*.c-graph-all {
   width: 175px;
   margin-left: 2rem;
-}
+}*/
 
 .c-graph1 {
 
@@ -252,7 +252,7 @@ h1 {
   flex-grow: 1;
   font-size: 1em;
   padding: 0.8em 1.2em;
-  /*overflow: hidden;*/
+  overflow: hidden;
   list-style: none;
   border: 
   background:
@@ -286,6 +286,27 @@ h1 {
 }
 
 @media (max-width: 875px) {
+  .menu-container {
+    /*display: flex;*/
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-between;
+    font-size: .85em;
+    margin: 2rem 2rem 2rem 2px;
+    padding: 0 1em 0 1em;
+    list-style-type: none;
+  }
+  
+  .text-margin {
+    margin: 0;
+  }
+
+  .menu-text {
+    margin-top: 2px;
+
+  }
+}
+
   .information-container {
     grid-template-columns: 27rem 1fr;
     }
@@ -299,6 +320,7 @@ h1 {
   } 
 }
 
+
 @media (max-width: 777px) {
   .information-container {
     grid-template-columns: 1fr;
@@ -306,5 +328,33 @@ h1 {
   .social-media {
     margin: 0 2rem 0 2rem;
   }
+}
+
+@media (max-width: 666px) {
+  .information-container {
+    display: flex;
+    flex-direction: column;
+    /*grid-template-columns: 1fr;*/
+    }
+
+    .table {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .table-cell {
+      /*flex-grow: 1;*/
+      font-size: 1em;
+      /*padding: 0.8em 1.2em;*/
+      overflow: hidden;
+      list-style: none;
+      border: 
+      background:
+}
+
+    .resp-column {
+      width: 20rem;
+
+    }
 }
 
