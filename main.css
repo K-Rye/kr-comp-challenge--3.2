@@ -5,7 +5,8 @@
 body {
   background-color: gray;
   max-width: 1500px;
-  margin: 0 auto;
+  margin: 0 auto 50px;
+
 
 }
 
@@ -144,22 +145,18 @@ h1 {
   margin-left: 25px;
 }
 
-.graph-buttons {
+/*.graph-buttons {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
-}
+  margin: 2rem 2rem 2rem 2rem;
+}*/
 
 .circle-graph-btn {
-  width: 100px;
+  width: 235px;
   height: 35px;
   border-radius: 30px;
-}
-
-.bar-graph-btn {
-  width: 100px;
-  height: 35px;
-  border-radius: 30px;
+  border: 1px solid blue;
+  margin: 2rem 1rem 1rem 13rem;
 }
 
 .c-graph-all {
@@ -226,6 +223,14 @@ h1 {
   flex-direction: column;
 }
 
+.bar-graph-btn {
+  width: 160px;
+  height: 35px;
+  border-radius: 30px;
+  border: 1px solid blue;
+  margin: 2rem 1rem 1rem 11rem;
+}
+
 .bar-graph-img {
   width: 25em;
   margin-left: 3rem
@@ -254,6 +259,15 @@ h1 {
 
 .job-description-header {
   border: 2px solid black;
+  height: 65px;
+  font-size: 1.25em;
+  padding: 0.75rem 1.5rem 0.5em 1.5rem;
+}
+
+.edit-btn {
+  width: 60px; 
+  height: 30px;
+  margin-left: 1rem;
 }
 
 .table {
@@ -269,7 +283,7 @@ h1 {
   padding: 0.8em 1.2em;
   overflow: hidden;
   list-style: none;
-  border: 
+  border-bottom: 2px solid black;
   background:
 }
 
@@ -283,9 +297,70 @@ h1 {
 }
 
 .social-media {
+  display: flex;
+  flex-direction: column;
   border: 2px solid black;
   margin-right: 3rem;
 }
+
+.facebook {
+  height: 50px;
+}
+
+.twitter {
+  height: 50px;
+}
+
+.linkdin {
+  height: 50px;
+}
+
+.btn-margin {
+  margin: 0 1rem 0 1rem;
+}
+
+.btn-spacing {
+  margin-top: 20px;
+}
+
+.btn-end {
+  display: inline-block;
+}
+
+.social-media-input {
+  height: 42px;
+  margin-left: 1em;
+
+}
+
+.link-to-job-input {
+  border: none;
+  /*width: 275px;*/
+  /*padding: .75em 0 .75em 1em;*/
+}
+
+.widget-input {
+  border: none;
+  /*width: 275px;*/
+  /*padding: .75em 0 .75em 1em;*/
+
+}
+
+.copy-btn {
+  padding: .75em .75em .75em .75em;
+}
+
+.upload-input {
+  margin-right: 1em;
+ /* border: none;
+  width: 340px;
+  padding: .75em 1em .75em 1em;
+  margin: 0 1rem 0 1rem;*/
+}
+
+
+
+
 
 /*=========================MEDIA QUERIES==========================*/
 
@@ -293,6 +368,14 @@ h1 {
   .graph-container {
     display: grid;
     grid-template-columns: 35rem 1fr; 
+  }
+  
+  .circle-graph-btn {
+    margin: 2rem 1rem 1rem 11rem;
+  }
+
+  .bar-graph-btn {
+    margin: 2rem 1rem 1rem 8rem;
   }
 
   .bar-graph-img {
@@ -305,6 +388,14 @@ h1 {
    .graph-container {
     display: grid;
     grid-template-columns: 30rem 1fr; 
+  }
+
+    .circle-graph-btn {
+    margin: 2rem 1rem 1rem 9rem;
+  }
+
+  .bar-graph-btn {
+    margin: 2rem 1rem 1rem 7rem;
   }
 
   .bar-graph-img {
@@ -328,6 +419,14 @@ h1 {
     grid-template-columns: 35rem 1fr; 
   }
 
+  .circle-graph-btn {
+    margin: 2rem 1rem 1rem 11rem;
+  }
+
+  .bar-graph-btn {
+    margin: 2rem 1rem 1rem 8rem;
+  }
+
   .bar-graph-img {
     width: 22em;
     margin-left: 2rem
@@ -338,6 +437,14 @@ h1 {
   .graph-container {
     display: grid;
     grid-template-columns: 30rem 1fr; 
+  }
+
+  .circle-graph-btn {
+    margin: 2rem 1rem 1rem 8rem;
+  }
+
+  .bar-graph-btn {
+    margin: 2rem 1rem 1rem 7rem;
   }
 
   .bar-graph-img {
@@ -431,6 +538,15 @@ h1 {
 @media (max-width: 666px) {
   .resp-column {
     width: 100%;
+  }
+
+  .table-cell {
+    border-bottom: none;
+  }
+
+  .column-right {
+    border-bottom: 2px solid black;
+   
   }
 }
 
