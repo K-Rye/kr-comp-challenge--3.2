@@ -74,7 +74,6 @@ aside {
 /*=======================PROFILE SECTION====================*/
 
 .profile-container {
-  /*border: 2px solid black;*/
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -85,7 +84,7 @@ aside {
 }
 
 .profile-btns {
-  margin-right: 2rem;
+  margin: 0 2rem 2rem 2rem;
 }
 
 h1 {
@@ -110,6 +109,14 @@ h1 {
 
 .text-margin {
   margin-left: 10px;
+}
+
+.menu-text {
+  border-bottom: solid  1px #ffffff00;
+}
+
+.menu-text:hover {
+  border-bottom: solid blue 1px;
 }
 
 /*========================GRAPH SECTION============================*/
@@ -287,14 +294,10 @@ h1 {
 
 @media (max-width: 875px) {
   .menu-container {
-    /*display: flex;*/
+    display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-content: space-between;
-    font-size: .85em;
-    margin: 2rem 2rem 2rem 2px;
-    padding: 0 1em 0 1em;
-    list-style-type: none;
+    font-size: 1.15em;
+    margin: 2rem 2rem 2rem 2rem;
   }
   
   .text-margin {
@@ -302,10 +305,8 @@ h1 {
   }
 
   .menu-text {
-    margin-top: 2px;
-
+    margin-top: 5px;
   }
-}
 
   .information-container {
     grid-template-columns: 27rem 1fr;
@@ -322,12 +323,46 @@ h1 {
 
 
 @media (max-width: 777px) {
+  h1 {
+    font-size: 2.5em;
+    }
+
+  .location-link {
+    display: inline-block;
+    font-size: 1.25em;
+    }
+
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+  .profile-information {
+    text-align: center;
+    /*margin-left: 0rem;*/
+    }
+
+  .profile-btns {
+    text-align: center;
+    /*margin: 0 2rem 2rem 2rem;*/
+    }
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
   .information-container {
     grid-template-columns: 1fr;
     }
+  
   .social-media {
     margin: 0 2rem 0 2rem;
-  }
+    }
 }
 
 @media (max-width: 666px) {
@@ -337,24 +372,23 @@ h1 {
     /*grid-template-columns: 1fr;*/
     }
 
-    .table {
-      display: flex;
-      justify-content: space-evenly;
+  .table {
+    display: flex;
+    justify-content: space-evenly;
     }
 
-    .table-cell {
-      /*flex-grow: 1;*/
-      font-size: 1em;
-      /*padding: 0.8em 1.2em;*/
-      overflow: hidden;
-      list-style: none;
-      border: 
-      background:
-}
-
-    .resp-column {
-      width: 20rem;
-
+  .table-cell {
+    /*flex-grow: 1;*/
+    font-size: 1em;
+    /*padding: 0.8em 1.2em;*/
+    overflow: hidden;
+    list-style: none;
+    border: 
+    background:
+    }
+  
+  .resp-column {
+    width: 20rem;
     }
 }
 
