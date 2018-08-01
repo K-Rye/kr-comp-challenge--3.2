@@ -112,6 +112,14 @@ h1 {
   margin-left: 10px;
 }
 
+.menu-text {
+  border-bottom: solid  1px #ffffff00;
+}
+
+.menu-text:hover {
+  border-bottom: solid blue 1px;
+}
+
 /*========================GRAPH SECTION============================*/
 
 .graph-container {
@@ -302,7 +310,8 @@ h1 {
   }
 
   .menu-text {
-    margin-top: 2px;
+    margin-top: 5px;
+
 
   }
 }
