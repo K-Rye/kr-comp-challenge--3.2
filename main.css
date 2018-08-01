@@ -19,10 +19,6 @@ aside {
   flex-direction: column;
 }
 
-.main-content-container {
-
-}
-
 /*=======================ASIDE SECTION========================*/
 
 .aside-profile-info {
@@ -125,17 +121,17 @@ h1 {
   display: grid;
   grid-template-columns: 40rem 1fr; 
 }
-.flex-wrapper {
+.circle-graph-section {
   display: flex;
   flex-flow: row nowrap;
 }
 
-.single-chart {
+.c-graph-all {
   width: 33%;
   justify-content: space-around ;
 }
 
-.circular-chart {
+.c-graph {
   display: block;
   margin: 10px auto;
   max-width: 80%;
@@ -161,38 +157,33 @@ h1 {
   }
 }*/
 
-.circular-chart.orange .circle {
-  stroke: #ff9f00;
+.c-graph.turquoise .circle {
+  stroke: #40E0D0;
 }
 
-.circular-chart.green .circle {
-  stroke: #4CC790;
+.c-graph.red .circle {
+  stroke: #7c0a02;
 }
 
-.circular-chart.blue .circle {
+.c-graph.blue .circle {
   stroke: #3c9ee5;
 }
 
-.percentage {
-  fill: #666;
+.c-numbers {
+  fill:;
   font-family: sans-serif;
   font-size: 0.5em;
   text-anchor: middle;
 }
 
-.interviews {
-  font-size: .25em;
+.inner-text {
+  font-size: .2em;
 }
 
 .circle-graph {
   display: flex;
   flex-flow: row nowrap; 
 }
-
-/*.c-graph-all {
-  width: 175px;
-  margin-left: 2rem;
-}*/
 
 .c-graph1 {
 
@@ -320,7 +311,6 @@ h1 {
     margin-right: 2rem;
   } 
 }
-
 
 @media (max-width: 777px) {
   h1 {
