@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: gray;
+  background-color: #ecf1f5;
   max-width: 1500px;
   margin: 0 auto 50px;
 
@@ -15,12 +15,14 @@ body {
 main {
   display: grid;
   grid-template-columns: 13rem 1fr;
+  background-color: #FFFFFF;
 }
 
 aside {
   border-right: 2px solid black;
   display: flex;
   flex-direction: column;
+  background-color: #374050;
 }
 
 /*=======================ASIDE SECTION========================*/
@@ -31,7 +33,8 @@ aside {
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
-  border-bottom: 2px solid black;
+  color:#a5acb9;
+  border-bottom: 2px solid #2b3240;
 }
 
 .aside-pic {
@@ -44,9 +47,9 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  border-bottom: 2px solid black;
+  color:#a5acb9;
+  border-bottom: 2px solid #2b3240;
   list-style-type: none;
-  /*margin-top: rem;*/
   padding-left: 1rem;
 }
 
@@ -66,9 +69,10 @@ aside {
 /*=================TOP NAVIGATION========================*/
 
 .top-navigation {
-  border: 2px solid black;
+  border: 2px solid #e7e9ec;
   display: grid;
   grid-template-columns: 5rem 1fr 5rem 5rem 5rem;
+  background-color: #FFFFFF;
 }
 
 /*=======================PROFILE SECTION====================*/
@@ -77,6 +81,7 @@ aside {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #FFFFFF;
 }
 
 .profile-information {
@@ -91,13 +96,25 @@ aside {
   width: 35px;
   height: 35px;
   border-radius: 50px;
+  border: #D4Dbe2 solid 2px;
   margin-left: .5rem;
+}
+
+.circle-btn:hover {
+  background-color: #46a3f3;
+  cursor: pointer;
 }
 
 .open-btn {
   width: 100px;
   height: 35px;
   border-radius: 30px;
+  border: #D4Dbe2 solid 2px;
+}
+
+.open-btn:hover {
+  background-color: #46a3f3;
+  cursor: pointer;
 }
 
 
@@ -115,6 +132,7 @@ h1 {
 .menu-container {
   display: flex;
   justify-content: space-around;
+  background-color: #FFFFFF;
   font-size: .85em;
   margin: 1rem 10rem 1rem 25px;
   padding: 0 0 0 0;
@@ -127,10 +145,12 @@ h1 {
 
 .menu-text {
   border-bottom: solid  1px #ffffff00;
+  margin-bottom: 1em;
 }
 
 .menu-text:hover {
-  border-bottom: solid blue 1px;
+  border-bottom: solid 1px #46a3f3;
+  cursor: pointer;
 }
 
 /*========================GRAPH SECTION============================*/
@@ -138,24 +158,26 @@ h1 {
 .graph-container {
   display: grid;
   grid-template-columns: 40rem 1fr; 
+  background-color: #ecf1f5;
 }
 
 .circle-graph-section {
   display: flex;
   margin-left: 25px;
+  margin-top: 2em;
 }
 
-/*.graph-buttons {
-  display: flex;
-  justify-content: space-between;
-  margin: 2rem 2rem 2rem 2rem;
-}*/
+.graph-btns:hover {
+  background-color: #46a3f3;
+  cursor: pointer;
+  
+}
 
 .circle-graph-btn {
   width: 235px;
   height: 35px;
   border-radius: 30px;
-  border: 1px solid blue;
+  border: 1px solid #D3D3D3;
   margin: 2rem 1rem 1rem 13rem;
 }
 
@@ -173,7 +195,7 @@ h1 {
 
 .circle-bg {
   fill: none;
-  stroke: #eee;
+  stroke: #FFFFFF;
   stroke-width: 3.8;
 }
 
@@ -221,13 +243,14 @@ h1 {
 .bar-graph-section {
   display: flex;
   flex-direction: column;
+  margin-top: 1em;
 }
 
 .bar-graph-btn {
   width: 160px;
   height: 35px;
   border-radius: 30px;
-  border: 1px solid blue;
+  border: 1px solid #D3D3D3;
   margin: 2rem 1rem 1rem 11rem;
 }
 
@@ -236,8 +259,17 @@ h1 {
   margin-left: 3rem
 }
 
+.page-break {
+  display: flex; 
+}
+
+.line-break {
+  width: 20px;
+}
+
 .hr-right {
-  font-color: black;
+  /*font-color: black;*/
+  width: 100px;
 }
 
 .hr-left {
@@ -247,27 +279,34 @@ h1 {
 /*=====================INFORMATION SECTION=========================*/
 
 .information-container {
-  border: 2px solid black;
   display: grid;
   grid-template-columns: 1fr 25rem;
+  background-color: #edf2f6;
 }
 
 .job-description {
-  border: 2px solid black;
   margin: 0 3rem 0 3rem;
+  background-color: #FFFFFF;
 }
 
 .job-description-header {
-  border: 2px solid black;
   height: 65px;
   font-size: 1.25em;
   padding: 0.75rem 1.5rem 0.5em 1.5rem;
+  background-color: #717e93;
 }
 
 .edit-btn {
   width: 60px; 
   height: 30px;
   margin-left: 1rem;
+  background-color: #7f8ba4;
+  border: none; 
+}
+
+.edit-btn:hover {
+  background-color: #46a3f3;
+  cursor: pointer;
 }
 
 .table {
@@ -280,10 +319,12 @@ h1 {
 .table-cell {
   flex-grow: 1;
   font-size: 1em;
+  color: #808ca0;
   padding: 0.8em 1.2em;
   overflow: hidden;
   list-style: none;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #f1f3f6;
+  /*margin: 0 1em 0 1em;*/
   background:
 }
 
@@ -299,20 +340,27 @@ h1 {
 .social-media {
   display: flex;
   flex-direction: column;
-  border: 2px solid black;
   margin-right: 3rem;
 }
 
 .facebook {
   height: 50px;
+  background-color: #5171bc;
+  color: #e4e9f4;
 }
 
 .twitter {
   height: 50px;
+  background-color: #47abe9;
+  color: #e4e9f4;
+
 }
 
 .linkdin {
   height: 50px;
+  background-color: #3581b8;
+  color: #e4e9f4;
+
 }
 
 .btn-margin {
@@ -321,6 +369,10 @@ h1 {
 
 .btn-spacing {
   margin-top: 20px;
+}
+
+.sm-info {
+  margin-left: 1rem;
 }
 
 .btn-end {
@@ -348,6 +400,8 @@ h1 {
 
 .copy-btn {
   padding: .75em .75em .75em .75em;
+  background-color: #66b8bf;
+  color: #e4e9f4;
 }
 
 .upload-input {
