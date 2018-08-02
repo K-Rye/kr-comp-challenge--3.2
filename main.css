@@ -398,6 +398,7 @@ h1 {
 
 .sm-info {
   margin: 3.5rem 0 1rem 1rem;
+  text-overflow: 
 }
 
 .link-job {
@@ -629,7 +630,6 @@ h1 {
   }
 }
 
-
 @media (max-width: 777px) {
   h1 {
     font-size: 2.5em;
@@ -654,6 +654,12 @@ h1 {
     /*border-bottom: 2px solid #e7e9ec; */
     /*flex-direction: column;*/
     grid-template-columns: 1fr;
+  }
+
+  .profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
    h1 {
@@ -730,14 +736,55 @@ h1 {
 }
 
 @media (max-width: 380px) {
+   .profile-information {
+    text-align: center;
+    margin: 0;
+  }
+
+  .location-link {
+    display: block;
+    margin: 0;
+  }
+
+  .preview {
+    margin-bottom: 2rem;
+  }
+
    .social-media-input {
       width: 12rem;
   }
 }
 
 @media (max-width: 345px) {
+  .social-media {
+    margin: 4rem 2rem 0 2rem;
+}
    .social-media-input {
       width: 10rem;
+  }
+}
+
+@media (max-width: 333px) {
+  .job-description {
+    margin: 0 1rem 0 1rem;
+    background-color: #FFFFFF;
+  }
+
+  .social-media {
+    text-align: center;
+    margin: 0;
+  }
+
+  .btn-margin {
+  }
+
+   .social-media-input {
+      width: 10rem;
+  }
+
+  .sm-info {
+    margin: 3.5rem;
+    text-overflow: 
   }
 }
 
