@@ -479,12 +479,12 @@ h1 {
 }
 
 @media (max-width: 1200px){
-   .graph-container {
+  .graph-container {
     display: grid;
     grid-template-columns: 30rem 1fr; 
   }
 
-    .circle-graph-btn {
+  .circle-graph-btn {
     margin: 2rem 1rem 1rem 9rem;
   }
 
@@ -502,11 +502,11 @@ h1 {
   main {
     display: grid;
     grid-template-columns: 1fr;
-    }
+  }
   
   aside {
     display: none;
-    }
+  }
 
   .graph-container {
     display: grid;
@@ -736,7 +736,7 @@ h1 {
 }
 
 @media (max-width: 380px) {
-   .profile-information {
+  .profile-information {
     text-align: center;
     margin: 0;
   }
@@ -746,8 +746,15 @@ h1 {
     margin: 0;
   }
 
-  .preview {
+  .preview-link {
     margin-bottom: 2rem;
+  }
+
+  .circle-graph-section {
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 2em;
   }
 
    .social-media-input {
