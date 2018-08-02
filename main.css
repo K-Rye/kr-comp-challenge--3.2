@@ -381,7 +381,6 @@ h1 {
   height: 50px;
   background-color: #3581b8;
   color: #e4e9f4;
-
 }
 
 .btn-margin {
@@ -399,6 +398,7 @@ h1 {
 
 .sm-info {
   margin: 3.5rem 0 1rem 1rem;
+  text-overflow: 
 }
 
 .link-job {
@@ -410,11 +410,13 @@ h1 {
 }
 
 .social-media-input {
+  border: none;
   height: 42px;
   margin-left: 1em;
+  width: 16rem;
 }
 
-.link-to-job-input {
+/*.link-to-job-input {
   border: none;
   width: 16em;
 }
@@ -422,7 +424,7 @@ h1 {
 .widget-input {
   border: none;
   width: 16em;
-}
+}*/
 
 .copy-btn {
   padding: .75em .75em .75em .75em;
@@ -477,12 +479,12 @@ h1 {
 }
 
 @media (max-width: 1200px){
-   .graph-container {
+  .graph-container {
     display: grid;
     grid-template-columns: 30rem 1fr; 
   }
 
-    .circle-graph-btn {
+  .circle-graph-btn {
     margin: 2rem 1rem 1rem 9rem;
   }
 
@@ -500,11 +502,11 @@ h1 {
   main {
     display: grid;
     grid-template-columns: 1fr;
-    }
+  }
   
   aside {
     display: none;
-    }
+  }
 
   .graph-container {
     display: grid;
@@ -596,8 +598,17 @@ h1 {
 
   .bar-graph-img {
     width: 30em;
-    margin: 10px auto 5px;
-    /*text-align: center*/
+    margin: 15px auto 10px;
+  }
+
+  .bar-graph-btn {
+    margin: 20px auto 40px;
+    /*margin: 2rem 1rem 9rem 11rem;*/
+  }
+
+  .circle-graph-btn {
+    margin: 0 auto 5px;
+  /*margin: 2rem 1rem 9rem 13rem;*/
   }
 
   .information-container {
@@ -613,6 +624,12 @@ h1 {
   } 
 }
 
+@media (max-width: 811px) {
+  .social-media-input {
+    width: 12rem;
+  }
+}
+
 @media (max-width: 777px) {
   h1 {
     font-size: 2.5em;
@@ -623,7 +640,48 @@ h1 {
    }
   
   .social-media {
-    margin: 0 2rem 0 2rem;
+    margin: 5rem 2rem 0 2rem;
+  }
+
+  .social-media-input {
+    width: 26rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .top-navigation {
+    display: grid;
+    /*border-bottom: 2px solid #e7e9ec; */
+    /*flex-direction: column;*/
+    grid-template-columns: 1fr;
+  }
+
+  .profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+   h1 {
+    font-size: 2em;
+  }
+
+  .fa-user-plus {
+    display: none;
+  }
+
+  .fa-calendar-plus {
+    display: none;
+  }
+
+  .fa-th {  
+    display: none;
+  }
+
+  .circle-graph-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -638,7 +696,6 @@ h1 {
 
   .column-right {
     border-bottom: 2px solid black;
-   
   }
 }
 
@@ -646,23 +703,96 @@ h1 {
   .bar-graph-img {
     width: 25em;
     margin: 15px auto 15px;
-    /*text-align: center*/
   }
 }
 
 @media (max-width: 505px) {
-  
   h1 {
     display: flex;
     justify-content: center;
   }
+}
 
-  .circle-graph-section {
-  display: flex;
-  flex-direction: column;
-  /*justify-content: center;*/
-  align-items: center;
+@media (max-width: 572px) {
+  .social-media-input {
+    width: 21rem;
+  }
+}
+
+@media (max-width: 492px) {
+  .social-media-input {
+    width: 16rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .bar-graph-img {
+    width: 17em;
   }
 
+   .social-media-input {
+      width: 14rem;
+  }
 }
+
+@media (max-width: 380px) {
+  .profile-information {
+    text-align: center;
+    margin: 0;
+  }
+
+  .location-link {
+    display: block;
+    margin: 0;
+  }
+
+  .preview-link {
+    margin-bottom: 2rem;
+  }
+
+  .circle-graph-section {
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 2em;
+  }
+
+   .social-media-input {
+      width: 12rem;
+  }
+}
+
+@media (max-width: 345px) {
+  .social-media {
+    margin: 4rem 2rem 0 2rem;
+}
+   .social-media-input {
+      width: 10rem;
+  }
+}
+
+@media (max-width: 333px) {
+  .job-description {
+    margin: 0 1rem 0 1rem;
+    background-color: #FFFFFF;
+  }
+
+  .social-media {
+    text-align: center;
+    margin: 0;
+  }
+
+  .btn-margin {
+  }
+
+   .social-media-input {
+      width: 10rem;
+  }
+
+  .sm-info {
+    margin: 3.5rem;
+    text-overflow: 
+  }
+}
+
 
